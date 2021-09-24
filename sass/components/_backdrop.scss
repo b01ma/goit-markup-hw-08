@@ -1,0 +1,24 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+
+  background-color: $backdrop-color;
+
+  transform-origin: top;
+  transform: translatey(0);
+
+  @include transition(opacity);
+  @include transition(transform);
+}
+
+.is-hidden {
+  opacity: 1;
+  transform: scaley(0);
+  transform: translatey(-100%);
+
+  pointer-events: none;
+}
