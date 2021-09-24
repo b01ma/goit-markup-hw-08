@@ -19,19 +19,12 @@
 }
 
 .container-centered {
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-
-  @media screen and (max-width: 320px) {
-    width: 320px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
 }
 
 .section {
