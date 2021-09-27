@@ -1,3 +1,18 @@
+.form__button--submit, .hero__button {
+  color: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.85;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding: 10px 32px;
+}
+
 body {
   background-color: #ffffff;
   color: #757575;
@@ -75,17 +90,11 @@ ul {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-bottom: 60px;
 }
 
 .heading {
   color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.67;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .image {
@@ -227,5 +236,210 @@ ul {
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form__input {
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__input:focus, .form__input:active {
+  border-color: #2196f3;
+}
+
+.form__input:focus + .form__icon,
+.form__input:active + .form__icon {
+  fill: #2196f3;
+}
+
+.form__icon {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  transform: translateY(50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__textarea {
+  resize: none;
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__textarea:active {
+  color: #2196f3;
+}
+
+.checkbox {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 23px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkbox__link {
+  color: #2196f3;
+}
+
+.checkbox__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox__input:checked + .checkbox__label::after {
+  background-image: url(../images/iconCheck.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  border: transparent;
+}
+
+.checkbox__label {
+  display: inline-block;
+}
+
+.checkbox__label::after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: block;
+  content: " ";
+  height: 15px;
+  width: 16px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form__button--submit {
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.hero {
+  padding-top: 109px;
+  padding-bottom: 118px;
+  background-color: #212121;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/herobanner-mobile.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/herobanner-tablet.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/herobanner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.hero__heading {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.hero__button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.advantages__heading {
+  text-align: center;
+}
+
+.advantages__item {
+  margin-bottom: 30px;
+}
+
+.advantages__item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item:nth-child(1)::before {
+  background-image: url(../images/iconAntenna.svg);
+}
+
+.advantages__item:nth-child(2)::before {
+  background-image: url(../images/iconClock.svg);
+}
+
+.advantages__item:nth-child(3)::before {
+  background-image: url(../images/iconDiagram.svg);
+}
+
+.advantages__item:nth-child(4)::before {
+  background-image: url(../images/iconAstronaut.svg);
+}
+
+.team__heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team__card {
+  width: 100%;
+  margin-bottom: 30px;
+  outline: 1px solid teal;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__thumb-image {
+  margin-bottom: 30px;
+}
+
+.card__content {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,50 @@
+.hero {
+  padding-top: 109px;
+  padding-bottom: 118px;
+
+  background-color: #212121;
+
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/herobanner-mobile.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 480px) {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../images/herobanner-tablet.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 480px) {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../images/herobanner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.hero__heading {
+  text-align: center;
+  color: $text-color-herohead;
+
+  margin-bottom: 30px;
+}
+
+.hero__button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  @extend %button;
+}
