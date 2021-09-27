@@ -1,1 +1,26 @@
+.social-links__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.social-links__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 12px;
+  border-radius: 50%;
+
+  fill: $icon-color;
+}
+
+.social-link__link:hover,
+.social-link__link:focus {
+  fill: $icon-social-link-accent;
+  background-color: $btn-bg-color;
+}
