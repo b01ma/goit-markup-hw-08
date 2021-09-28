@@ -1,0 +1,138 @@
+.portfolio__link {
+  display: inline-block;
+  text-decoration: none;
+  color: $text-color-main;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+
+  &:hover .card__content--hover,
+  &:focus .card__content--hover {
+    transform: translateY(0%);
+    transform: scale(1);
+  }
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 50px;
+}
+
+.portfolio__item {
+  margin-bottom: 15px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.portfolio__nav {
+  margin-bottom: -15px;
+}
+
+.portfolio__btn {
+  font-family: "Roboto", sans-serif;
+  color: $text-color-second;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  border: 0;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  overflow: hidden;
+
+  display: block;
+  padding: 6px 22px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $btn-bg-color;
+    color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+// .projects__list {
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   margin-right: -30px;
+//   margin-bottom: -30px;
+// }
+
+.projects__item {
+  display: block;
+  width: 100%;
+}
+
+.card__content {
+  padding: 20px 24px;
+
+  background: #ffffff;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.card__thumb-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__content--hover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translatey(100%);
+
+  @include transition(transform);
+}
+
+.card__text--hover {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1, 56;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.card-heading {
+  color: $text-color-second;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
+}
+
+.card__text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
