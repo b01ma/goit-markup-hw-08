@@ -17,10 +17,13 @@
   border-radius: 50%;
 
   fill: $icon-color;
-}
 
-.social-link__link:hover,
-.social-link__link:focus {
-  fill: $icon-social-link-accent;
-  background-color: $btn-bg-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $icon-social-link-accent;
+    background-color: $btn-bg-color;
+  }
 }

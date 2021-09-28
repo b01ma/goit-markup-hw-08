@@ -6,9 +6,13 @@
   height: 100vh;
   background-color: $bg-color-main;
 
-  transform: translatex(100%);
+  box-sizing: border-box;
 
   padding: 48px 40px;
+
+  transform: translatex(100%);
+
+  @include transition(transform);
 }
 
 .is-open {
@@ -20,6 +24,8 @@
   width: 40px;
   border: none;
   background-color: transparent;
+
+  @include transition(fill);
 
   &:hover,
   &:focus {
@@ -36,17 +42,38 @@
   border: none;
   background-color: transparent;
 
+  @include transition(fill);
+
   &:hover,
   &:focus {
     fill: $icon-accent;
   }
 }
 
-// чтобы победить специфичность, добавил ссылку
-.nav__list a {
+// Не могу победить специфичность, присутсвует text-decoration
+.nav__list {
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
   color: $text-color-second;
+}
+
+.nav__item {
+  margin-bottom: 32px;
+}
+
+.nav__contacts {
+  margin-top: auto;
+}
+
+// чтобы победить специфичность
+.contacts__link--accent {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  color: $text-color-accent;
+
+  fill: $text-color-accent;
 }
