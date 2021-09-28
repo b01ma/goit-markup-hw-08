@@ -6,6 +6,9 @@
   height: 100vh;
   background-color: $bg-color-main;
 
+  display: flex;
+  flex-direction: column;
+
   box-sizing: border-box;
 
   padding: 48px 40px;
@@ -51,7 +54,7 @@
 }
 
 // Не могу победить специфичность, присутсвует text-decoration
-.nav__list {
+.nav__list a {
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
@@ -65,10 +68,38 @@
 
 .nav__contacts {
   margin-top: auto;
+  margin-bottom: 64px;
+}
+
+.mobile-menu__social-list {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu__social-item {
+  padding: 0 10px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+.mobile-menu__social-link {
+  @include transition(color);
+  color: $text-color-main;
+
+  &:hover,
+  &:focus {
+    color: $text-color-accent;
+  }
 }
 
 // чтобы победить специфичность
-.contacts__link--accent {
+.contacts__item .contacts__link--accent {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.33;
@@ -76,4 +107,21 @@
   color: $text-color-accent;
 
   fill: $text-color-accent;
+}
+
+.contacts__item .contacts__link--small {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  color: $text-color-main;
+
+  &:hover,
+  &:focus {
+    color: $text-color-accent;
+  }
+}
+
+.contacts__icons {
+  display: none;
 }
