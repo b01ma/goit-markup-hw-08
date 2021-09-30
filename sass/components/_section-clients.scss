@@ -1,6 +1,11 @@
 .clients__heading {
   text-align: center;
   margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 
 .clients__list {
@@ -14,6 +19,10 @@
 
 .clients__item {
   flex-basis: calc(100% / 2);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3);
+  }
 }
 
 .clients__icon {

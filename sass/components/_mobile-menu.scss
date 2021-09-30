@@ -19,6 +19,12 @@
   @include transition(transform);
 }
 
+.mobile-menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .is-open {
   transform: translatex(0);
 }
@@ -55,19 +61,20 @@
 }
 
 // Не могу победить специфичность, присутсвует text-decoration
-.nav__list a {
+.mob-nav__list a {
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
+
   letter-spacing: 0.02em;
   color: $text-color-second;
 }
 
-.nav__item {
+.mob-nav__item {
   margin-bottom: 32px;
 }
 
-.nav__contacts {
+.mob-nav__contacts {
   margin-top: auto;
   margin-bottom: 64px;
 }
@@ -100,17 +107,18 @@
 }
 
 // чтобы победить специфичность
-.contacts__item .contacts__link--accent {
+.mob-contacts__item .mob-contacts__link--accent {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.33;
+
   letter-spacing: 0.02em;
   color: $text-color-accent;
 
   fill: $text-color-accent;
 }
 
-.contacts__item .contacts__link--small {
+.mob-contacts__item .mob-contacts__link--small {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.33;
@@ -123,6 +131,6 @@
   }
 }
 
-.contacts__icons {
+.mob-contacts__icons {
   display: none;
 }

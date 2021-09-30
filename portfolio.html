@@ -21,18 +21,25 @@
 </body>
 
 <!--  Page-header -->
-    <header class="header">
-        <div class="container-centered header__box">
-            <a href="./index.html" class="link logo logo--up-left">Web<span class="link logo logo--black">Studio</span></a>
+<header class="header">
+    <div class="container-centered header__box">
 
-            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg width="24" height="24"  viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                        clip-rule="evenodd"></path>
-                </svg>
-            </button>
-           
+
+        <div class="mobile-menu__container">
+
+            <div class="mobile-menu__header">
+                <a href="./index.html" class="link logo logo--up-left">Web<span
+                        class="link logo logo--black">Studio</span></a>
+
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+
             <!-- Mobile Menu -->
             <div class="menu-container js-menu-container mobile-menu" id="mobile-menu">
                 <button class="menu-toggle js-close-menu">
@@ -44,40 +51,42 @@
                 </button>
 
                 <!-- Навигация -->
-                <nav class="nav">
-                    <ul class="list nav__list ">
-                        <li class="nav__item">
-                            <a href="index.html" class="link nav__link nav__link--currentpage">Студия</a>
+                <nav class="mob-nav">
+                    <ul class="list mob-nav__list ">
+                        <li class="mob-nav__item">
+                            <a href="index.html" class="link mob-nav__link mob-nav__link--currentpage">Студия</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="portfolio.html" class="link nav__link">Портфолио</a>
+                        <li class="mob-nav__item">
+                            <a href="portfolio.html" class="link mob-nav__link">Портфолио</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#" class="link nav__link">Контакты</a>
+                        <li class="mob-nav__item">
+                            <a href="#" class="link mob-nav__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
 
-                 <!-- Header contacts  -->
-                <div class="nav__contacts">
-                    <ul class="nav__list conatacts__list">
-                        
-                        <li class="link nav__item contacts__item">
-                            <a href="#" class="link nav__link nav__link--grey contacts__link contacts__link--accent">
-                                <svg class="contacts__icons" width="10" height="16">
+                <!-- Header contacts  -->
+                <div class="mob-nav__contacts">
+                    <ul class="mob-nav__list mob-conatacts__list">
+
+                        <li class="link mob-nav__item mob-contacts__item">
+                            <a href="#"
+                                class="link mob-nav__link mob-nav__link--grey mob-contacts__link mob-contacts__link--accent">
+                                <svg class="mob-contacts__icons" width="10" height="16">
                                     <use href="./images/icon-sprite.svg#iconsmartphone"></use>
                                 </svg>
                                 +38 096 111 11 11</a>
                         </li>
-                        <li class="contacts__item">
-                            <a href="#" class="link nav__link nav__link--grey contacts__link contacts__link--small ">
-                                <svg class="contacts__icons" width="16" height="12">
+                        <li class="mob-contacts__item">
+                            <a href="#"
+                                class="link mob-nav__link mob-nav__link--grey mob-contacts__link mob-contacts__link--small ">
+                                <svg class="mob-contacts__icons" width="16" height="12">
                                     <use href="./images/icon-sprite.svg#iconEnvelop"></use>
                                 </svg>
                                 info@devstudio.com</a>
                         </li>
                     </ul>
-                
+
                 </div>
 
                 <!-- Social links -->
@@ -85,7 +94,7 @@
                     <ul class="mobile-menu__social-list">
                         <li class="mobile-menu__social-item">
                             <a href="" class="mobile-menu__social-link">Instagram</a>
-                            </li>
+                        </li>
                         <li class="mobile-menu__social-item">
                             <a href="" class="mobile-menu__social-link">Twitter</a>
                         </li>
@@ -98,12 +107,57 @@
                     </ul>
                 </div>
             </div>
-
-           
         </div>
 
-       
-    </header>
+        <div class="nav-menu__container">
+
+            <a href="./index.html" class="link logo logo--up-left">Web<span
+                    class="link logo logo--black">Studio</span></a>
+            <!-- Навигация -->
+            <nav class="nav">
+                <ul class="list nav__list ">
+                    <li class="nav__item">
+                        <a href="index.html" class="link nav__link ">Студия</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="portfolio.html" class="link nav__link nav__link--currentpage">Портфолио</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="link nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Header contacts  -->
+            <div class="nav__contacts">
+                <ul class="nav__list contacts__list">
+
+                    <li class="contacts__item">
+                        <a href="#" class="link  nav__link--grey contacts__link ">
+                            <svg class="contacts__icons" width="16" height="12">
+                                <use href="./images/icon-sprite.svg#iconEnvelop"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+
+                    <li class="link nav__item contacts__item">
+                        <a href="#" class="link  nav__link--grey contacts__link">
+                            <svg class="contacts__icons" width="10" height="16">
+                                <use href="./images/icon-sprite.svg#iconsmartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</header>
 
 <main>
     <!-- Section Portfolio -->
@@ -152,8 +206,10 @@
                                 </div>
             
                                 <div class="card__content">
-                                    <h2 class="card-heading">Texнокряк</h2>
-                                    <p class="card-text">Веб-сайт</p>
+                                    <div class="card__content--fixed-size">
+                                        <h2 class="card-heading">Texнокряк</h2>
+                                        <p class="card-text">Веб-сайт</p>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -174,8 +230,10 @@
                                 </div>
             
                                 <div class="card__content">
-                                    <h2 class="card-heading">Постер New Orlean vs Golden Star</h2>
-                                    <p class="card-text">Дизайн</p>
+                                    <div class="card__content--fixed-size">
+                                        <h2 class="card-heading">Постер New Orlean vs Golden Star</h2>
+                                        <p class="card-text">Дизайн</p>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -358,55 +416,58 @@
 <!-- Footer of webpage -->
 <footer class="footer section">
     <div class="container-centered footer__container">
-        <!-- 1st column - Logo and Addresses -->
-        <div class="footer__contacts">
-            <a href="./index.html" class="link logo logo--down-left">Web<span class="link logo--white">Studio</span></a>
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
-                </li>
-                <li class="footer__item">
-                    <a class="link footer__link" href="#">info@example.com</a>
-                </li>
-                <li class="footer__item list__item">
-                    <a class="link footer__link" href="#">+38 099 111 11 11</a>
-                </li>
-            </ul>
-        </div>
+        <div class="tablet-container">
+            <!-- 1st column - Logo and Addresses -->
+            <div class="footer__contacts">
+                <a href="./index.html" class="link logo logo--down-left">Web<span
+                        class="link logo--white">Studio</span></a>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+                    </li>
+                    <li class="footer__item">
+                        <a class="link footer__link" href="#">info@example.com</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="link footer__link" href="#">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
 
-        <!-- Social links -->
-        <div class="social-links social-links--dark-bgc">
-            <h2 class="footer__heading">Присоидиняйтесь</h2>
-            <ul class="footer-links__list">
-                <li class="footer-links__item">
-                    <a href="" class="footer-links__link">
-                        <svg class="footer-links__icon" width="20" height="20">
-                            <use href="./images/icon-sprite.svg#iconInstagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-links__item">
-                    <a href="" class="footer-links__link">
-                        <svg class="footer-links__icon" width="20" height="20">
-                            <use href="./images/icon-sprite.svg#iconTwitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-links__item">
-                    <a href="" class="footer-links__link">
-                        <svg class="footer-links__icon" width="20" height="20">
-                            <use href="./images/icon-sprite.svg#iconFacebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-links__item">
-                    <a href="" class="footer-links__link">
-                        <svg class="footer-links__icon" width="20" height="20">
-                            <use href="./images/icon-sprite.svg#iconLinkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            <!-- Social links -->
+            <div class="social-links social-links--dark-bgc">
+                <h2 class="footer__heading">Присоединяйтесь</h2>
+                <ul class="footer-links__list">
+                    <li class="footer-links__item">
+                        <a href="" class="footer-links__link">
+                            <svg class="footer-links__icon" width="20" height="20">
+                                <use href="./images/icon-sprite.svg#iconInstagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-links__item">
+                        <a href="" class="footer-links__link">
+                            <svg class="footer-links__icon" width="20" height="20">
+                                <use href="./images/icon-sprite.svg#iconTwitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-links__item">
+                        <a href="" class="footer-links__link">
+                            <svg class="footer-links__icon" width="20" height="20">
+                                <use href="./images/icon-sprite.svg#iconFacebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-links__item">
+                        <a href="" class="footer-links__link">
+                            <svg class="footer-links__icon" width="20" height="20">
+                                <use href="./images/icon-sprite.svg#iconLinkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!-- Form subscribe -->
@@ -419,6 +480,7 @@
         </form>
 
     </div>
+
 </footer>
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

@@ -6,6 +6,11 @@
 
 .form-subs__field {
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
   padding: 15px;
   background-color: #2f303a;
   color: #ffffff;

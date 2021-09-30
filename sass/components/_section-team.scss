@@ -2,14 +2,30 @@
   background-color: $bg-color-team-sec;
 }
 
+.team__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: -15px;
+  }
+}
+
 .team__heading {
   text-align: center;
   margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 
 .team__card {
-  width: 100%;
-  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 
   padding-bottom: 24px;
 
@@ -17,6 +33,12 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+
+    margin: 15px;
+  }
 }
 
 .card__image {

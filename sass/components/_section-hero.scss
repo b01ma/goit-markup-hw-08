@@ -35,6 +35,14 @@
   }
 }
 
+.hero__container {
+  @media screen and (min-width: 768px) {
+    width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .hero__heading {
   text-align: center;
   color: $text-color-herohead;

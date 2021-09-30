@@ -2,6 +2,14 @@
   background-color: $bg-color-footer;
 }
 
+.tablet-container {
+  @media screen and (min-width: 768px) and (max-width: 1600px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
 .footer__contacts {
   text-align: center;
   margin-bottom: 60px;
