@@ -1,6 +1,8 @@
 .backdrop {
   position: fixed;
 
+  z-index: 4;
+
   top: 0;
   right: 0;
   width: 100%;
@@ -24,9 +26,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  z-index: 3;
+
   padding: 40px;
 
-  width: 450px;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 528px;

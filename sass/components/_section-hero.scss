@@ -2,36 +2,94 @@
   padding-top: 109px;
   padding-bottom: 118px;
 
+  margin-right: auto;
+  margin-left: auto;
+
   background-color: #212121;
 
   background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/herobanner-mobile.jpeg);
+    url(../images/herobanner-mobile-min.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media screen and (min-width: 480px) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.3),
         rgba(0, 0, 0, 0.3)
       ),
-      url(../images/herobanner-tablet.jpeg);
+      url(../images/herobanner-moblie-x2-min.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  @media screen and (min-width: 480px) and (max-width: 1600px) {
+  // @media screen and (min-width: 480px) {
+  //   background: linear-gradient(
+  //       to right,
+  //       rgba(0, 0, 0, 0.3),
+  //       rgba(0, 0, 0, 0.3)
+  //     ),
+  //     url(../images/herobanner-mobile-min.jpeg);
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
+
+  @media screen and (min-width: 768px) {
     background: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.3),
         rgba(0, 0, 0, 0.3)
       ),
-      url(../images/herobanner.jpeg);
+      url(../images/herobanner-tablet-min.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(../images/herobanner-tablet-x2-min.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../images/herobanner-min.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(../images/herobanner-x2-min.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 

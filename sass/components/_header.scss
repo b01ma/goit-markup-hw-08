@@ -22,7 +22,9 @@
 }
 
 .logo--up-left {
-  margin-right: 93px;
+  @media screen and (min-width: 1199px) {
+    margin-right: 93px;
+  }
 }
 
 .nav__list {

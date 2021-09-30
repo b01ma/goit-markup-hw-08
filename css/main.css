@@ -84,6 +84,18 @@ ul {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .container-centered {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-centered {
+    width: 768px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .container-centered {
     width: 1200px;
@@ -137,8 +149,10 @@ ul {
   }
 }
 
-.logo--up-left {
-  margin-right: 93px;
+@media screen and (min-width: 1199px) {
+  .logo--up-left {
+    margin-right: 93px;
+  }
 }
 
 .nav__list {
@@ -406,6 +420,7 @@ ul {
 
 .backdrop {
   position: fixed;
+  z-index: 4;
   top: 0;
   right: 0;
   width: 100%;
@@ -425,12 +440,19 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 3;
   padding: 40px;
-  width: 450px;
+  width: 100%;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: #fff;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-window {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -626,6 +648,7 @@ ul {
 
 .about__item {
   position: relative;
+  z-index: 1;
 }
 
 .about__item:not(:last-child) {
@@ -651,25 +674,55 @@ ul {
 .hero {
   padding-top: 109px;
   padding-bottom: 118px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: #212121;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/herobanner-mobile.jpeg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/herobanner-mobile-min.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-@media screen and (min-width: 480px) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/herobanner-tablet.jpeg);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/herobanner-moblie-x2-min.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) {
   .hero {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/herobanner.jpeg);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/herobanner-tablet-min.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/herobanner-tablet-x2-min.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/herobanner-min.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/herobanner-x2-min.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1017,6 +1070,7 @@ ul {
   .projects__item {
     display: block;
     width: 100%;
+    margin-bottom: 30px;
   }
 }
 
@@ -1041,7 +1095,7 @@ ul {
   border-left: 1px solid #eeeeee;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .card__content--fixed-size {
     max-width: 300px;
     min-height: 106px;
