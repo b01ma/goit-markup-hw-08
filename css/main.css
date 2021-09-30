@@ -767,6 +767,7 @@ ul {
 }
 
 .advantages__heading {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.166;
@@ -1070,6 +1071,8 @@ ul {
   .projects__item {
     display: block;
     width: 100%;
+  }
+  .projects__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
