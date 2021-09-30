@@ -22,7 +22,7 @@
     background-size: cover;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 1600px) {
     background: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.3),
@@ -41,6 +41,12 @@
     margin-right: auto;
     margin-left: auto;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .hero__heading {
@@ -48,6 +54,13 @@
   color: $text-color-herohead;
 
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1, 36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .hero__button {

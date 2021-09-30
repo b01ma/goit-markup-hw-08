@@ -1,13 +1,19 @@
 .about {
   padding-top: 0;
 
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
 
 .about__heading {
   margin-bottom: 50px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 
 .about__list {

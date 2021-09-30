@@ -5,9 +5,18 @@
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.66;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.advantages__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: -15px;
+  }
 }
 
 .advantages__item {
@@ -20,14 +29,11 @@
 
     margin: 15px;
   }
-}
 
-.advantages__list {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
 
-    margin: -15px;
+    margin: 15px;
   }
 }
 

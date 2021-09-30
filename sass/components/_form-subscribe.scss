@@ -1,7 +1,19 @@
+.form-subs {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    width: 570px;
+  }
+}
+
 .form-subs__input {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .form-subs__field {
@@ -21,6 +33,11 @@
   border-radius: 4px;
 
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 
 .form-subs__btn {
