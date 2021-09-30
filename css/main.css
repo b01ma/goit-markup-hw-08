@@ -975,6 +975,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio__nav {
+    margin-bottom: 50px;
+  }
+}
+
 .portfolio__btn {
   font-family: "Roboto", sans-serif;
   color: #212121;
