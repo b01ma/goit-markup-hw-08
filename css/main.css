@@ -1021,6 +1021,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
 .card__content {
   padding: 20px 24px;
   background: #ffffff;
@@ -1029,9 +1035,11 @@ ul {
   border-left: 1px solid #eeeeee;
 }
 
-.card__content--fixed-size {
-  max-width: 300px;
-  min-height: 106px;
+@media screen and (max-width: 1199px) {
+  .card__content--fixed-size {
+    max-width: 300px;
+    min-height: 106px;
+  }
 }
 
 .portfolio__link {

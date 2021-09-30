@@ -96,6 +96,10 @@
 
     margin: 15px;
   }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .card__content {
@@ -108,8 +112,10 @@
 }
 
 .card__content--fixed-size {
-  max-width: 300px;
-  min-height: 106px;
+  @media screen and (max-width: 1199px) {
+    max-width: 300px;
+    min-height: 106px;
+  }
 }
 
 .portfolio__link {
