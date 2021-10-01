@@ -2,7 +2,7 @@
   background-color: $bg-color-team-sec;
 }
 
-.team__list {
+.team-card__list {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -25,13 +25,11 @@
   }
 }
 
-.team__card {
+.team-card__item {
   @media screen and (max-width: 767px) {
     width: 100%;
     margin-bottom: 30px;
   }
-
-  padding-bottom: 24px;
 
   background-color: $bg-color-main;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -49,16 +47,22 @@
   }
 }
 
-.card__image {
+.team-card__image {
   width: 100%;
+  display: block;
 }
 
-.card__thumb-image {
-  margin-bottom: 30px;
+.team-card__heading {
+  margin-bottom: 10px;
 }
 
-.card__content--text-center {
-  text-align: center;
-
+.team-card__text {
   margin-bottom: 16px;
+}
+
+.team-card__content {
+  text-align: center;
+  box-sizing: border-box;
+
+  padding: 30px 0 24px 0;
 }

@@ -5,7 +5,7 @@
 }
 
 .tablet-container {
-  @media screen and (min-width: 768px) and (max-width: 1600px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -31,6 +31,7 @@
 
 .footer__address {
   color: #ffffff;
+  font-style: normal;
 }
 
 .footer__item a {

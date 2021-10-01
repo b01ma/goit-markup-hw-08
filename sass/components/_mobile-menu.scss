@@ -98,11 +98,11 @@
 
 .mobile-menu__social-link {
   @include transition(color);
-  color: $text-color-main;
+  color: $text-color-accent;
 
   &:hover,
   &:focus {
-    color: $text-color-accent;
+    font-weight: bold;
   }
 }
 

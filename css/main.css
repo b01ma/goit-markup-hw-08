@@ -386,11 +386,11 @@ ul {
 
 .mobile-menu__social-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #757575;
+  color: #2196f3;
 }
 
 .mobile-menu__social-link:hover, .mobile-menu__social-link:focus {
-  color: #2196f3;
+  font-weight: bold;
 }
 
 .mob-contacts__item .mob-contacts__link--accent {
@@ -672,8 +672,8 @@ ul {
 }
 
 .hero {
-  padding-top: 109px;
-  padding-bottom: 118px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-right: auto;
   margin-left: auto;
   background-color: #212121;
@@ -729,7 +729,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 400px) {
   .hero__container {
     width: 360px;
     margin-right: auto;
@@ -755,7 +755,7 @@ ul {
   .hero__heading {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1, 36;
+    line-height: 1.36;
     letter-spacing: 0.06em;
   }
 }
@@ -842,7 +842,7 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  .team__list {
+  .team-card__list {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -864,44 +864,49 @@ ul {
   }
 }
 
-.team__card {
-  padding-bottom: 24px;
+.team-card__item {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
 @media screen and (max-width: 767px) {
-  .team__card {
+  .team-card__item {
     width: 100%;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .team__card {
+  .team-card__item {
     flex-basis: calc(100% / 2 - 30px);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .team__card {
+  .team-card__item {
     flex-basis: calc(100% / 4 - 30px);
   }
 }
 
-.card__image {
+.team-card__image {
   width: 100%;
+  display: block;
 }
 
-.card__thumb-image {
-  margin-bottom: 30px;
+.team-card__heading {
+  margin-bottom: 10px;
 }
 
-.card__content--text-center {
-  text-align: center;
+.team-card__text {
   margin-bottom: 16px;
+}
+
+.team-card__content {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 30px 0 24px 0;
 }
 
 .clients__heading {
@@ -1162,7 +1167,7 @@ ul {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) {
   .tablet-container {
     display: flex;
     justify-content: space-around;
@@ -1191,6 +1196,7 @@ ul {
 
 .footer__address {
   color: #ffffff;
+  font-style: normal;
 }
 
 .footer__item a {

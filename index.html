@@ -281,66 +281,68 @@
         <section class="team section" >
             <div class="container-centered">
                 <h2 class="heading team__heading">Наша команда</h2>
-                <ul class="team__list">
-                    <!-- Card -->
-                    <li class="team__card">
-                        <div class="card__thumb-image">
-                            <img class="image card__image" 
-                            srcset="./images/team1-mobile-min.jpg 1x, ./images/team1-mobile-x2-min.jpg 2x"
-                            src="./images/team1.jpg" 
-                            alt="Фото Игоря Демянова" >
+
+                <ul class="team-card__list">
+
+                    <!-- Card 1-->
+                    <li class="card team-card__item">
+                        <div class="team-card__thumb-image">
+                            <img class="team-card__image" srcset="./images/team1-mobile-min.jpg 1x, ./images/team1-mobile-x2-min.jpg 2x"
+                                src="./images/team1.jpg" alt="Фото Николая Тарасова" width="270">
                         </div>
-                        <div class="card__content card__content--text-center">
-                            <h3 class="card__heading heading" >Игорь Демьяненко</h3>
-                            <p class="card__text" >Product Designer</p>
-                        </div>
-                        <!-- Links for social media -->
-                        <div class="social-links">
+                        <div class="team-card__content">
+                            <h3 class="team-card__heading heading">Игорь Демьяненко</h3>
+                            <p class="team-card__text">Product designer</p>
+                    
+                            <!-- Links for social media -->
                             <ul class="social-links__list">
                                 <li class="social-links__item">
-                                    <a href="#" class="link social-link__link">
+                                    <a href="#" class="social-link__link">
                                         <svg class="social-link__icon" width="20" height="20">
-                                            <use href="./images/icon-sprite.svg#iconMail"></use>
+                                            <use href="./images/icon-sprite.svg#iconInstagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-links__item">
-                                    <a href="#" class="link social-link__link">
-                                         <svg class="social-link__icon" width="20" height="20">
+                                    <a href="#" class="social-link__link">
+                                        <svg class="social-link__icon" width="20" height="20">
                                             <use href="./images/icon-sprite.svg#iconTwitter"></use>
-                                         </svg>
-                                    </a>
-                                 </li>
-                                 <li class="social-links__item">
-                                    <a href="#" class="link social-link__link">
-                                         <svg class="social-link__icon" width="20" height="20">
-                                             <use href="./images/icon-sprite.svg#iconFacebook"></use>
                                         </svg>
-                                     </a>
-                                 </li>
+                                    </a>
+                                </li>
                                 <li class="social-links__item">
-                                    <a href="#" class="link social-link__link">
+                                    <a href="#" class="social-link__link">
+                                        <svg class="social-link__icon" width="20" height="20">
+                                            <use href="./images/icon-sprite.svg#iconFacebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-links__item">
+                                    <a href="#" class="social-link__link">
                                         <svg class="social-link__icon" width="20" height="20">
                                             <use href="./images/icon-sprite.svg#iconLinkedin"></use>
                                         </svg>
                                     </a>
                                 </li>
                             </ul>
+                        </div>
+                    
+                    
                     </li>
-                    <!-- Card -->
-                    <li class="card team__card">
-                        <div class="card__thumb-image">
-                            <img class="card__image" 
+
+                    <!-- Card 2-->
+                    <li class="card team-card__item">
+                        <div class="team-card__thumb-image">
+                            <img class="team-card__image" 
                             srcset="./images/team2-mobile-min.jpg 1x, ./images/team2-mobile-x2-min.jpg 2x"
                             src="./images/team2.jpg" 
                             alt="Фото Ольшги Репеной" width="270">
                         </div>
-                        <div class="card__content card__content--text-center">
-                            <h3 class="card__heading heading">Ольга Репина</h3>
-                            <p class="card__text">Frontend Developer</p>
-                        </div>
+                        <div class="team-card__content">
+                            <h3 class="team-card__heading heading">Ольга Репина</h3>
+                            <p class="team-card__text">Frontend Developer</p>
+                        
                         <!-- Links for social media -->
-                        <div class="social-links">
                             <ul class="social-links__list">
                                 <li class="social-links__item">
                                     <a href="#" class="social-link__link">
@@ -371,21 +373,21 @@
                                     </a>
                                 </li>
                             </ul>
+                            </div>
                     </li>
-                    <!-- Card -->
-                    <li class="card team__card">
-                        <div class="card__thumb-image">
-                            <img class="card__image" 
+                    <!-- Card 3-->
+                    <li class="card team-card__item">
+                        <div class="team-card__thumb-image">
+                            <img class="team-card__image" 
                             srcset="./images/team3-mobile-min.jpg 1x, ./images/team3-mobile-x2-min.jpg 2x"
                             src="./images/team3.jpg" 
                             alt="Фото Николая Тарасова" width="270">
                         </div>
-                        <div class="card__content card__content--text-center">
-                            <h3 class="card__heading heading">Николай Тарасов</h3>
-                            <p class="card__text">Marketing</p>
-                        </div>
-                        <!-- Links for social media -->
-                        <div class="social-links">
+                        <div class="team-card__content">
+                            <h3 class="team-card__heading heading">Николай Тарасов</h3>
+                            <p class="team-card__text">Marketing</p>
+
+                            <!-- Links for social media -->
                             <ul class="social-links__list">
                                 <li class="social-links__item">
                                     <a href="#" class="social-link__link">
@@ -416,21 +418,23 @@
                                     </a>
                                 </li>
                             </ul>
+                        </div>
+                        
+                            
                     </li>
-                    <!-- Card -->
-                    <li class="card team__card">
-                        <div class="card__thumb-image">
-                            <img class="card__image" 
+                    <!-- Card 4-->
+                    <li class="card team-card__item">
+                        <div class="team-card__thumb-image">
+                            <img class="team-card__image" 
                             srcset="./images/team4-mobile-min.jpg 1x, ./images/team4-mobile-x2-min.jpg 2x"
                             src="./images/team4.jpg" 
                             alt="Фото Михаила Ермакова" width="270">
                         </div>
-                        <div class="card__content card__content--text-center">
-                            <h3 class="card__heading heading">Михаил Ермаков</h3>
-                            <p class="card__text">UI Designer</p>
-                        </div>
-                        <!-- Links for social media -->
-                        <div class="social-links">
+                        <div class="team-card__content card__content--text-center">
+                            <h3 class="team-card__heading heading">Михаил Ермаков</h3>
+                            <p class="team-card__text">UI Designer</p>
+                        
+                            <!-- Links for social media -->
                             <ul class="social-links__list">
                                 <li class="social-links__item">
                                     <a href="#" class="social-link__link">
@@ -461,6 +465,7 @@
                                     </a>
                                 </li>
                             </ul>
+                        </div>
                     </li>
                     
                 </ul>
